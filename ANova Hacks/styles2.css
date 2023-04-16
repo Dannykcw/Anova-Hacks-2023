@@ -32,6 +32,8 @@ body {
 }
 
 .container {
+    height:auto;
+    width:auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
     animation: sunlight 5s; 
@@ -83,7 +85,7 @@ body {
     height: 100vh;
     opacity: 0;
     background-color: rgb(91, 209, 255);
-    transform: translateY(-125px);
+    transform: translateY(-200px);
     animation: fadeIn 9s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
