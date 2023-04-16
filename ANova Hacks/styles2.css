@@ -1,0 +1,114 @@
+@keyframes move {
+    from {top: 0px;}
+    to {top: 300px;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+}
+
+@keyframes sunlight {
+    from {background-color: white;}
+    to {background-color: rgb(253, 53, 13);}
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden;
+
+}
+
+.container {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: sunlight 5s; 
+    animation-fill-mode: forwards;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color:white;
+    background-color: black;
+    margin: 0;
+}
+
+.fact {
+    text-align: center;
+    opacity: 0;
+    color: white;
+    margin: 50px auto;
+    font-size: x-large;
+    animation: fadeIn 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.😱 {
+    text-align: center;
+    opacity: 0;
+    font-size: x-large;
+    color: white;
+    animation: fadeIn 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+.iceberg {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    animation: move 10s, fadeOut 8s, rotate 8s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}   
+
+.box {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    opacity: 0;
+    background-color: rgb(91, 209, 255);
+    transform: translateY(-125px);
+    animation: fadeIn 9s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.link {
+    text-decoration: none;
+    margin: 0 auto;
+    width: 150px;
+}
+
+button {
+    text-decoration: none;
+    text-align: center;
+    margin: 50px auto 0;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 50px;
+    opacity:0;
+    font-size: 1rem;
+    color: white;
+    background: black;
+    cursor: pointer;
+    animation: fadeIn 2s;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+}
